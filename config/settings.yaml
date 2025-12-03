@@ -1,0 +1,24 @@
+# Global Project Settings
+
+project_name: "Project Argos"
+version: "4.0"
+
+# Data Paths
+data_paths:
+  market_data: "data/market_data"
+  fundamental_data: "data/fundamental_data"
+  results: "data/results"
+  warehouse: "data/warehouse"
+  reports: "data/reports"
+  output: "output"
+
+# Backtest Defaults
+backtest:
+  initial_capital: 1000000  # 1M USD
+  commission_rate: 0.001    # 10 bps
+  slippage: 0.001           # 10 bps
+
+# Circuit Breakers
+circuit_breakers:
+  max_nan_pct: 0.20         # Max 20% missing data allowed
+  min_price: 1.0            # Minimum stock price
